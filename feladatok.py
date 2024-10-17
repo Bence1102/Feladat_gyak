@@ -14,7 +14,35 @@ def poz_szamok_szama(lista):
     db:int=0
     while(i<len(lista)):
         """print(lista[i])"""
-        if(lista[0]>0):
+        if(lista[i]>0):
             db+=1
         i+=1
     return db
+
+
+def negativ_szamok_osszege(lista):
+    print(lista)
+    i:int=0
+    ossz:int=0
+    while(i<len(lista)):
+        if(lista[i]<0):
+            ossz += lista[i]
+        i+=1
+    return ossz
+
+
+def ottel_oszthatoak(lista):
+    print(lista)
+    i:int=0
+    db:int=0
+    oszt:int=0
+    while(i<len(lista)):
+        if(lista[i]%5==0):
+            oszt+=lista[i]
+            db+=1
+        i+=1
+        
+    return oszt
+
+
+    
